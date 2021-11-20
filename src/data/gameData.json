@@ -1,0 +1,12 @@
+{
+    "ff1": {
+        "id": "ff1",
+        "name": "Final Fantasy I",
+        "year": "1987"
+    },
+    "ff2": {
+        "id": "ff2",
+        "name": "Final Fantasy II",
+        "year": "1988"
+    }
+}

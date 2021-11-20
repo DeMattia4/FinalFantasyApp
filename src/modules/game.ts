@@ -1,7 +1,10 @@
+import { Renderer } from '../modules/renderer';
 
 // Game Class
 export class Game {
-    constructor(private name:string, private year: string ){
-
-    }
+    constructor(
+        private id: string, 
+        public name:string, 
+        public year: string)
+    {}    
 }

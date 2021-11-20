@@ -5,3 +5,8 @@
 3. Run `npm start` in a separate command window. This will launch a local web server and browser.
 
 **Note:** When you're done running the code press `ctrl+c` in each of the command windows you opened above to stop the running processes.
+
+### Compiling and testing the Code
+1. tsc - will install all TypeScript files and generate JS files
+2. npm run webpack - will bundle all of the JS files into bundle.js
+3. npm start - launches a local server and browser
