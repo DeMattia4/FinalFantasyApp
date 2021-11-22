@@ -5,6 +5,8 @@ export class Game {
     constructor(
         private id: string, 
         public name:string, 
-        public year: string)
+        public year: string,
+        public hero?: string,
+        public villain?: string)
     {}    
 }

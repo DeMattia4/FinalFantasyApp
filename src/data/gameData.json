@@ -2,11 +2,106 @@
     "ff1": {
         "id": "ff1",
         "name": "Final Fantasy I",
-        "year": "1987"
+        "year": "1987",
+        "hero": "Warriors of Light",
+        "villain": "Chaos"
     },
     "ff2": {
         "id": "ff2",
         "name": "Final Fantasy II",
-        "year": "1988"
+        "year": "1988",
+        "hero": "Firion",
+        "villain": "The Emperor"
+    },
+    "ff3": {
+        "id": "ff3",
+        "name": "Final Fantasy III",
+        "year": "1990",
+        "hero": "Luneth",
+        "villain": "Cloud of Darkness"
+    },
+    "ff4": {
+        "id": "ff4",
+        "name": "Final Fantasy IV",
+        "year": "1991",
+        "hero": "Cecil",
+        "villain": "Zeromus"
+    },
+    "ff5": {
+        "id": "ff5",
+        "name": "Final Fantasy V",
+        "year": "1992",
+        "hero": "Bartz",
+        "villain": "Exdeath"
+    },
+    "ff6": {
+        "id": "ff6",
+        "name": "Final Fantasy VI",
+        "year": "1994",
+        "hero": "Terra",
+        "villain": "Kefka"
+    },
+    "ff7": {
+        "id": "ff7",
+        "name": "Final Fantasy VII",
+        "year": "1997",
+        "hero": "Cloud",
+        "villain": "Sephiroth"
+    },
+    "ff8": {
+        "id": "ff8",
+        "name": "Final Fantasy VIII",
+        "year": "1999",
+        "hero": "Squall",
+        "villain": "Ultimecia"
+    },
+    "ff9": {
+        "id": "ff9",
+        "name": "Final Fantasy IX",
+        "year": "2000",
+        "hero": "Zidane",
+        "villain": "Kuja/Necron"
+    },
+    "ff10": {
+        "id": "ff10",
+        "name": "Final Fantasy X",
+        "year": "2001",
+        "hero": "Tidus",
+        "villain": "Sin/Yu Yevon"
+    },
+    "ff11": {
+        "id": "ff11",
+        "name": "Final Fantasy XI",
+        "year": "2002",
+        "hero": "Custom",
+        "villain": "Lady Lilith/Cloud of Darkness"
+    },
+    "ff12": {
+        "id": "ff12",
+        "name": "Final Fantasy XII",
+        "year": "2006",
+        "hero": "Vaan",
+        "villain": "Vayne Solidor"
+    },
+    "ff13": {
+        "id": "ff13",
+        "name": "Final Fantasy XIII",
+        "year": "2009",
+        "hero": "Lightning",
+        "villain": "Barthandelus/Orphan"
+    },
+    "ff14": {
+        "id": "ff14",
+        "name": "Final Fantasy XIV",
+        "year": "2013",
+        "hero": "Custom",
+        "villain": "Ascians"
+    },
+    "ff15": {
+        "id": "ff15",
+        "name": "Final Fantasy XV",
+        "year": "2016",
+        "hero": "Noctis",
+        "villain": "Ardyn"
     }
 }

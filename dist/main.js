@@ -52,7 +52,7 @@ function gameContent() {
 }
 function renderGameData(gameID, panel) {
     return __awaiter(this, void 0, void 0, function () {
-        var response, data, gameJSON, gameObjID, gameObjName, gameObjYear, gameObj, gameDivID, renderer;
+        var response, data, gameJSON, gameObjID, gameObjName, gameObjYear, gameObjHero, gameObjVillain, gameObj, gameDivID, renderer;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, fetch('/src/data/gameData.json')];
@@ -67,11 +67,33 @@ function renderGameData(gameID, panel) {
                         gameObjID = gameJSON.id;
                         gameObjName = gameJSON.name;
                         gameObjYear = gameJSON.year;
-                        gameObj = new Game(gameObjID, gameObjName, gameObjYear);
+                        gameObjHero = gameJSON.hero;
+                        gameObjVillain = gameJSON.villain;
+                        gameObj = new Game(gameObjID, gameObjName, gameObjYear, gameObjHero, gameObjVillain);
                         gameDivID = "#" + gameID + "Data";
                         renderer = new Renderer(document.querySelector(gameDivID));
-                        renderer.render('<p>' + gameObj.name + " : " + gameObj.year + '</p>');
-                        console.log(gameObj.name + " : " + gameObj.year);
+                        renderer.render('<table>' +
+                            '<tr>' +
+                            '<td>' + "Name" + "</td>" +
+                            '<td>' + gameObj.name + '</td>' +
+                            '</tr>' +
+                            '<tr>' +
+                            '<td>' + "Year" + "</td>" +
+                            '<td>' + gameObj.year + '</td>' +
+                            '</tr>' +
+                            '<tr>' +
+                            '<td>' + "Hero" + "</td>" +
+                            '<td>' + gameObj.hero + '</td>' +
+                            '</tr>' +
+                            '<tr>' +
+                            '<td>' + "Villain" + "</td>" +
+                            '<td>' + gameObj.villain + '</td>' +
+                            '</tr>' +
+                            '</table>');
+                        console.log("Name: " + gameObj.name +
+                            " Year: " + gameObj.year +
+                            " Hero: " + gameObj.hero +
+                            " Villain: " + gameObj.villain);
                     }
                     catch (_b) {
                         console.log("Error generating Game object from JSON file!");

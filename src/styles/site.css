@@ -3,7 +3,7 @@
 html {
     /* font-size 62.5% makes 1rem equal 10px for easy size calculations. */
     font-size: 62.5%;
-    font-family: Calibri, Arial, sans-serif;
+    font-family: "Calibri, Arial, sans-serif";
     background-color: #f8f2ea;
     height: 100%;
 }
@@ -18,7 +18,7 @@ body {
 input, button {
     margin: 0;    
     font-size: 1.8rem;
-    font-family: Calibri, Arial, sans-serif;
+    font-family: "Calibri, Arial, sans-serif";
 }
 
 .container {
@@ -72,6 +72,11 @@ h1 {
     color: #ee9d07;
   }
 
+  .panel img {
+    height: 80px;
+    width: 200px;
+  }
+
   .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 18px;
@@ -82,4 +87,9 @@ h1 {
   
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  table, tr, td {
+    border: 1px solid #c57103;
+    font-size: 20px;
   }

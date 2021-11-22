@@ -32,13 +32,36 @@ async function renderGameData(gameID:string, panel:any){
         const gameObjID = gameJSON.id;
         const gameObjName = gameJSON.name;
         const gameObjYear = gameJSON.year;
-        const gameObj = new Game(gameObjID, gameObjName, gameObjYear);
+        const gameObjHero = gameJSON.hero;
+        const gameObjVillain = gameJSON.villain;
+        const gameObj = new Game(gameObjID, gameObjName, gameObjYear, gameObjHero, gameObjVillain);
 
         const gameDivID = "#" + gameID + "Data";
         const renderer = new Renderer(document.querySelector(gameDivID));
-        renderer.render('<p>' + gameObj.name + " : " + gameObj.year + '</p>');
-        
-        console.log(gameObj.name + " : " + gameObj.year);
+        renderer.render(
+            '<table>' + 
+                '<tr>' + 
+                    '<td>' + "Name" + "</td>" +
+                    '<td>' + gameObj.name + '</td>' +
+                '</tr>' +
+                '<tr>' + 
+                    '<td>' + "Year" + "</td>" +
+                    '<td>' + gameObj.year + '</td>' +
+                '</tr>' +
+                '<tr>' + 
+                    '<td>' + "Hero" + "</td>" +
+                    '<td>' + gameObj.hero + '</td>' +
+                '</tr>' + 
+                '<tr>' + 
+                    '<td>' + "Villain" + "</td>" +
+                    '<td>' + gameObj.villain + '</td>' +
+                '</tr>' +
+            '</table>');
+
+        console.log("Name: " + gameObj.name + 
+                    " Year: " + gameObj.year + 
+                    " Hero: " + gameObj.hero + 
+                    " Villain: " + gameObj.villain);
     }
     catch{
         console.log("Error generating Game object from JSON file!");
